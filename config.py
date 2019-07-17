@@ -1,0 +1,2 @@
+SECRET_KEY=b'&_j8SGBn0(>`#m`'
+TEMPlATES_AUTO_RELOAD=True

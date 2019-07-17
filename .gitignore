@@ -3,3 +3,4 @@ venv/
 __pycache__/
 hello1.py
 ficheros.py
+config.py

@@ -4,10 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <link rel="stylesheet" href="./static/css/skeleton.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <!--<style>
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .header {
+        background-color: gray;
+        color: white;
+    }
+    .mensajes-error {
+        color: red;
+    }
+    #fecha {
+        color: green;
+    }
+    </style-->
 </head>
 <body>
-    <header>
-        <h1>Simple Exchanger</h1>
+    <div class="header">
+        <div class="container">
+            <h3>Simple Exchanger</h3>
     </header>
     <div class="container">
         <p class="menu">
@@ -16,13 +36,16 @@
         {% block body %}{% endblock%}
     </div>
     <div class="mensajes-error">
-            {% if error %}
+            {% if errores %}
+                
                 <ul class="flash-messages">
+                {% for error in errores %}
                     <li>{{ error }}</li>    
+                {% endfor %}
                 </ul>
             {% endif %}
     </div>
-    <footer>
+    <footer class="container">
         <p>Criptobook &copy; 2019</p>
     </footer>
 </body>
