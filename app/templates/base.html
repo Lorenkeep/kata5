@@ -8,42 +8,43 @@
     <link rel="stylesheet" href="./static/css/skeleton.css">
     <link rel="stylesheet" href="./static/css/styles.css">
 
-    <!--<style>
-    *{
-        font-family: 'Courier New', Courier, monospace;
+    <!--style>
+    * {
+        font-family:'Courier New', Courier, monospace;
     }
+
     .header {
         background-color: gray;
         color: white;
     }
+
     .mensajes-error {
         color: red;
     }
-    #fecha {
-        color: green;
-    }
+
     </style-->
 </head>
 <body>
     <div class="header">
         <div class="container">
             <h3>Simple Exchanger</h3>
-    </header>
+        </div>
+    </div>
     <div class="container">
         <p class="menu">
             <a href="./">Inicio</a> | <a href="/nuevacompra">Compra</a>
         </p>
+        {% if errores %}
+        <div class="mensajes-error">
+            <ul class="flash-messages">
+            {% for error in errores %}
+                <li>{{ error }}</li>    
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    
         {% block body %}{% endblock%}
-    </div>
-    <div class="mensajes-error">
-            {% if errores %}
-                
-                <ul class="flash-messages">
-                {% for error in errores %}
-                    <li>{{ error }}</li>    
-                {% endfor %}
-                </ul>
-            {% endif %}
     </div>
     <footer class="container">
         <p>Criptobook &copy; 2019</p>
