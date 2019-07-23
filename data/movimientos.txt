@@ -1,4 +1,6 @@
-2019-07-17,"Compra del miercoles",ETH,2,EUR,1255,627.5
+2019-07-17,"Compra del miercoles",ETH,2,EUR,123,61.5
 2019-07-19,"Ya es viernes, por fin es viernes, que bien",BTC,1,EUR,1,1.0
 2019-07-10,"Concepto penultimo lunes",ETH,1,LTC,12,12.0
-2019-07-22,"COMPRA lunes",LTC,600,EUR,300,0.5
+2019-07-31,"Un concepto",EUR,12,LTC,2,0.16666666666666666
+2019-07-23,"hola",LTC,2,EUR,5,2.5
+2019-07-17,"jkfkjfkf",BTC,551,EUR,60000,108.8929219600726
